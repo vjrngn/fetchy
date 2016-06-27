@@ -1,0 +1,22 @@
+{
+  "name": "fetchy",
+  "version": "0.0.1",
+  "description": "Simple HTTP package using the new Fetch API. ",
+  "main": "src/http.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/vjrngn/fetchy/"
+  },
+  "keywords": [
+    "http",
+    "fetch",
+    "ajax",
+    "get",
+    "post"
+  ],
+  "author": "Vijay Rangan",
+  "license": "MIT"
+}
