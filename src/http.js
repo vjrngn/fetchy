@@ -55,7 +55,7 @@ module.exports = {
 
       var req = new Request(uri, {
         method: 'POST',
-        body: data,
+        body: JSON.stringify(data),
         mode: options.mode || defaults.options.mode,
         headers: new Headers(customHeaders)
       })
