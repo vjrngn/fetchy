@@ -31,7 +31,6 @@ module.exports = {
       headers: new Headers(customHeaders)
     });
 
-    window.req = req;
 
     return new Promise((resolve, reject) => {
       fetch(req)
