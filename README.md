@@ -5,14 +5,15 @@ Only 'GET' and 'POST' requests are supported for now.
 **All responses default to JSON unless specified otherwise**
 
 # Installation
-Using GitHub
-  git clone https://github.com/vjrngn/fetchy/
+	
+	git clone https://github.com/vjrngn/fetchy/
 
 *currently not on npm, but will soon be.*
 
 # Usage
 In any file :
-  import http from 'fetchy';
+	
+	import http from 'fetchy';
 
 ## GET requests
 
