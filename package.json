@@ -1,7 +1,7 @@
 {
-  "name": "fetchy",
+  "name": "vjrngn-fetchy",
   "version": "0.0.1",
-  "description": "Simple HTTP package using the new Fetch API. ",
+  "description": "Simple HTTP package using the new Fetch API.",
   "main": "src/http.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
