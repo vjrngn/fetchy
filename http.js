@@ -26,7 +26,7 @@ module.exports = {
     let customHeaders = Object.assign(defaults.headers, headers)
 
     var req = new Request(uri, {
-      type: 'GET',
+      method: 'GET',
       mode: options.mode || defaults.options.mode,
       headers: new Headers(customHeaders)
     });
@@ -40,7 +40,20 @@ module.exports = {
     });
   },
 
-  post: function(uri, data, headers) {
+  post: function(uri, data, headers = {}, options = {}) {
+      let customHeaders = Object.assign(defaults.headers, headers)
 
+      var req = new Request(uri, {
+        method: 'POST',
+        mode: options.mode || defaults.options.mode,
+        headers: new Headers(customHeaders)
+      })
+
+
+      return new Promise((resolve, reject) => {
+        fetch(req)
+          .then(response => resolve(resonse.json()))
+          .catch(err => reject(err))
+      });
   }
 };
