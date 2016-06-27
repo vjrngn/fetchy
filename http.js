@@ -40,11 +40,22 @@ module.exports = {
     });
   },
 
+  /**
+   * HTTP 'POST' request
+   *
+   * @param  {String} uri
+   * @param  {Object} data
+   * @param  {Object} headers
+   * @param  {Object} options
+   *
+   * @return {Promise} Response data in json format.
+   */
   post: function(uri, data, headers = {}, options = {}) {
       let customHeaders = Object.assign(defaults.headers, headers)
 
       var req = new Request(uri, {
         method: 'POST',
+        body: data,
         mode: options.mode || defaults.options.mode,
         headers: new Headers(customHeaders)
       })
