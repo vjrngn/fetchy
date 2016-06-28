@@ -1,5 +1,5 @@
 {
-  "name": "vjrngn-fetchy",
+  "name": "digit-fetchy",
   "version": "0.0.1",
   "description": "Simple HTTP package using the new Fetch API.",
   "main": "src/http.js",
