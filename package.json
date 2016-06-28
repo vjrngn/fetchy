@@ -1,6 +1,6 @@
 {
   "name": "digit-fetchy",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Simple HTTP package using the new Fetch API.",
   "main": "src/http.js",
   "scripts": {
