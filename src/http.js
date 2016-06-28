@@ -62,7 +62,7 @@ module.exports = {
 
       return new Promise((resolve, reject) => {
         fetch(req)
-          .then(response => resolve(resonse.json()))
+          .then(response => resolve(response.json()))
           .catch(err => reject(err))
       });
   }
