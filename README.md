@@ -13,7 +13,7 @@ Only 'GET' and 'POST' requests are supported for now.
 # Usage
 In any file :
 	
-	import http from 'fetchy';
+	var http = require('digit-fetchy');
 
 ## GET requests
 
