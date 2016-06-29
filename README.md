@@ -34,7 +34,7 @@ In any file :
 	    'x-custom-header': 'foo'
 	  };
 	
-	  http.get('some/url/here.com')
+	  http.get('some/url/here.com', headers)
 	    .then(response => {
 	      // json response here.
 	    })
