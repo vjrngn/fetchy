@@ -18,6 +18,11 @@ In any file :
 
 	var http = require('digit-fetchy');
 
+The method signature for requests are :
+
+				http.get (uri, headers, options) {};
+        http.(post|put) (uri, data, headers, options) {};
+
 ## GET request
 
 *Simple GET request with default headers*
