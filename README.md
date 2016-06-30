@@ -1,6 +1,5 @@
 # Fetchy
 Simple HTTP package using the new Fetch API.
-Only 'GET' and 'POST' requests are supported for now.
 
 **All responses default to JSON unless specified otherwise**
 
