@@ -21,7 +21,7 @@ In any file :
 The method signature for requests are :
 
 	http.get (uri, headers, options) {};
-        http.(post|put) (uri, data, headers, options) {};
+	http.(post|put) (uri, data, headers, options) {};
 
 ## GET request
 
