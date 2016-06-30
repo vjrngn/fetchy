@@ -19,7 +19,7 @@ In any file :
 
 	var http = require('digit-fetchy');
 
-## GET requests
+## GET request
 
 *Simple GET request with default headers*
 
@@ -46,7 +46,7 @@ In any file :
 	      // any errors here
 	    });
 
-## POST requests
+## POST request
 
 *Simple POST request with default headers*
 
@@ -81,6 +81,26 @@ In any file :
 	    .catch(errors => {
 	      // any errors here
 	    });
+	    
+## PUT request
+
+        let data = {
+	    name: 'John',
+	    password: 'foobar'
+	  };
+
+	  let headers = {
+	    'x-foo': 'bar'
+	  };
+
+	  http.put('some/url/here.com', data, headers)
+	    .then(response => {
+	      // json response here
+	    })
+	    .catch(errors => {
+	      // any errors here
+	    });
+
 
 Request Options:
 
